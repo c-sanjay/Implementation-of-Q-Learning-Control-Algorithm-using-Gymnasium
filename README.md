@@ -91,10 +91,11 @@ The action-value function `Q(s, a)` represents the expected return obtained by t
 ### Q-Learning Update Rule
 
 $$
-Q(S_t,A_t) \leftarrow Q(S_t,A_t) + \alpha
-\left[
-R_{t+1} + \gamma \max_a Q(S_{t+1},a)
-- Q(S_t,A_t)
+Q(S_t, A_t) \leftarrow Q(S_t, A_t) +
+\alpha \left[
+R_{t+1} +
+\gamma \max_a Q(S_{t+1}, a) -
+Q(S_t, A_t)
 \right]
 $$
 
