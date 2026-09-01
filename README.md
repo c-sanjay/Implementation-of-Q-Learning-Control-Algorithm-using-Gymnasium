@@ -235,6 +235,7 @@ for episode in range(num_episodes):
 ### Average Reward
 <img width="476" height="48" alt="image" src="https://github.com/user-attachments/assets/1066c3eb-771b-4483-8a71-49ee23a8d2c1" />
 
+<img width="880" height="587" alt="image" src="https://github.com/user-attachments/assets/8365e9b8-716a-49bb-8c46-862097619143" />
 
 ## Result
 
