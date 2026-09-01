@@ -162,23 +162,6 @@ Initially, epsilon is high so that the agent explores the environment. As traini
 ## Python Program
 
 ```python
-
-
-# -------------------------------------------------
-# Epsilon-Greedy Action Selection
-# -------------------------------------------------
-
-def choose_action(state, epsilon):
-
-    if np.random.random() < epsilon:
-        # Exploration
-        return env.action_space.sample()
-
-    else:
-        # Exploitation
-        return int(np.argmax(Q[state]))
-
-
 # -------------------------------------------------
 # Q-Learning Training
 # -------------------------------------------------
@@ -230,23 +213,12 @@ for episode in range(num_episodes):
     )
 
 
-# -------------------------------------------------
-# Estimated State-Value Function
-# -------------------------------------------------
-
-state_values = np.max(Q, axis=1)
-
 
 ```
 
 ---
 
 ## Output
-
-The output will vary slightly between executions because `FrozenLake-v1` with `is_slippery=True` is stochastic.
-
-### Number of States and Actions
-<img width="221" height="60" alt="image" src="https://github.com/user-attachments/assets/b617e6d7-7203-47a0-9c7d-055d6bf25a81" />
 
 
 ### Final Q-Table
